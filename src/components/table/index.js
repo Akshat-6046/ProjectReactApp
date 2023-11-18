@@ -25,7 +25,7 @@ function Table() {
   };
   const onEdit = (newObj) => {
     if (newObj === tableData[objIndex])
-      return notification("error", "No changes done! Data is same as previous");
+      return notification("warn", "No change! Data same as previous");
     setTableData((prev) => {
       const newList = prev;
       newList[objIndex] = newObj;

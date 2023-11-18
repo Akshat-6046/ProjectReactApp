@@ -54,6 +54,7 @@ function EditAction({
         </button>
         {showField ? (
           <button
+          type="submit"
             onClick={() => {
               onEdit(obj);
               setShowModal(null);

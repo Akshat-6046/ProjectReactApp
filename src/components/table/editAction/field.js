@@ -10,6 +10,7 @@ function Field({ showField, obj, setObj }) {
     <>
       <label htmlFor={showField}>{toStartCase(showField)}: </label>
       <input
+        type={["age", "pinCode"].includes(showField) ? "number" : "text"}
         name={showField}
         value={obj?.[showField]}
         className={styles.input}
